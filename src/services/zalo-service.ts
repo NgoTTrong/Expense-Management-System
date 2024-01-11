@@ -26,6 +26,7 @@ export default class ZaloService {
   static getUser = async () => {
     await api.login({});
     const { userInfo } = await api.getUserInfo({});
+    console.log(userInfo);
     return userInfo;
   };
 }
