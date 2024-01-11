@@ -1,0 +1,83 @@
+@import "./tailwind.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --zmp-primary-color: #0068ff;
+  --zmp-secondary-color: #ff8a00;
+  --zmp-page-bg-color: #f4f5f6;
+}
+body {
+  background-color: white;
+}
+hr {
+  width: 100%;
+  background-color: #e4eeef;
+  height: 0.5px;
+  border: none;
+}
+.zaui-header-back .zaui-btn-container > * {
+  color: white;
+}
+.zaui-bottom-navigation-item.zaui-bottom-navigation-item-active {
+  color: #1ca380;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  .zaui-routes {
+    flex: 1;
+    .zaui-routes-item {
+      display: flex;
+      .zaui-page {
+        min-height: 0;
+        flex: 1;
+      }
+    }
+  }
+}
+#bottom-nav .zaui-bottom-navigation-content {
+  height: 64px;
+}
+.zaui-bottom-navigation-content::after {
+  top: 0;
+}
+.zaui-btn-primary,
+.zaui-btn-primary.zaui-btn-highlight {
+  background-color: var(--zmp-primary-color);
+}
+.zaui-btn-tertiary,
+.zaui-btn-tertiary.zaui-btn-highlight {
+  color: var(--zmp-primary-color);
+}
+.zaui-btn-secondary,
+.zaui-btn-secondary.zaui-btn-highlight {
+  background-color: white;
+  color: black;
+}
+.zaui-page,
+.no-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+h1 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+b {
+  font-weight: 600;
+}
+.zaui-header::after {
+  display: none;
+}
+.zaui-header {
+  margin: 0;
+}
+canvas {
+  touch-action: auto !important;
+}
+.ant-table-container > * {
+  font-size: 10px !important;
+}
